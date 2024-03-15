@@ -1,0 +1,75 @@
+.introduction{grid-area: intro;}
+.contacts{grid-area: contacts;}
+.codeProfile{grid-area: cp;}
+.education{grid-area: education;}
+.skills{grid-area: skills;}
+.workexp{grid-area: work;}
+.certifications{grid-area: certi;}
+.language{grid-area: language;}
+ #symbol{
+    size: 300px;
+    color: blueviolet;
+ }
+.grid-container{
+    /* background-color: #f5f4f2 ; */
+    background-color: chocolate;
+    display: grid;
+    
+    grid-template-areas:
+    'intro intro'
+    'contacts cp'
+    'work certi'
+    'education skills'
+    'language language';
+    gap: 0.2cm;
+    grid-auto-flow: dense;
+}
+.grid-container > div{
+    border-radius: 25px;
+    border-color: black;
+    border-width: 5px;
+    background-color: #f5f4f2;
+    padding-left: 5%;
+    place-items: center;
+}
+h1,h2,h3,p{
+    font-family:cursive;
+}
+ 
+ 
+@media only screen and (max-width: 767px){
+    .grid-container{
+       
+        background-color: chocolate;
+        display: grid;
+        grid-template-areas:
+        'intro'
+        'contacts'
+        'cp'
+        'work'
+        'education'
+        'skills'
+        'certi'
+        'language';
+        gap: 0.05cm;
+   
+    }
+}
+@media only screen and (min-width: 834px) and (maxs-width: 1194px){
+    .grid-container{
+        
+        background-color: chocolate;
+        display: grid;
+        grid-template-areas:
+        'intro'
+        'contacts'
+        'cp'
+        'work'
+        'education'
+        'skills'
+        'certi'
+        'language';
+        gap: 0.05cm;
+   
+    }
+}
